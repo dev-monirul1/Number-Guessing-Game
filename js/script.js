@@ -39,20 +39,20 @@ firstNameBtn.addEventListener("click", () => {
 
 
 
-// firstNumberBtn.addEventListener("click", () => {
-//     let inputNumberValue = firstNumberInput.value;
-//     console.log(inputNumberValue);
+firstNumberBtn.addEventListener("click", () => {
+    let inputNumberValue = firstNumberInput.value;
+    console.log(inputNumberValue);
 
-//     if (inputNumberValue === "") {
-//         firstNumberError.removeAttribute("hidden")
-//     }
-//     else {
-//         firstNumberError.setAttribute("hidden", true)
-//         thirdPage.removeAttribute("hidden")
-//         secondPage.setAttribute("hidden", true)
-//     }
+    if (inputNumberValue === "") {
+        firstNumberError.removeAttribute("hidden")
+    }
+    else {
+        firstNumberError.setAttribute("hidden", true)
+        thirdPage.removeAttribute("hidden")
+        secondPage.setAttribute("hidden", true)
+    }
 
-// })
+})
 
 
 
