@@ -1,96 +1,114 @@
+// first tPage---------
+const firstPage = document.getElementById("firstPage")
 const firstPageHead = document.getElementById("firstPageHead")
 const firstNameInput = document.getElementById("firstNameInput")
 const firstNameBtn = document.getElementById("firstNameBtn")
 const firstNameError = document.getElementById("firstNameError")
-const firstPage = document.getElementById("firstPage")
+// first tPage---------
+
+// second Page---------
 const secondPage = document.getElementById("secondPage")
 const secondPageHead = document.getElementById("secondPageHead")
 const firstNumberInput = document.getElementById("firstNumberInput")
 const firstNumberBtn = document.getElementById("firstNumberBtn")
 const firstNumberError = document.getElementById("firstNumberError")
+// second Page---------
+
+// third Page---------
 const thirdPage = document.getElementById("thirdPage")
 const thirdPageHead = document.getElementById("thirdPageHead")
 const secondNameInput = document.getElementById("secondNameInput")
 const secondNameBtn = document.getElementById("secondNameBtn")
 const secondNameError = document.getElementById("secondNameError")
+// third Page---------
+
+// fourth Page---------
 const fourthPage = document.getElementById("fourthPage")
 const fourthPageHead = document.getElementById("fourthPageHead")
 const secondNumberInput = document.getElementById("secondNumberInput")
 const secondNumberBtn = document.getElementById("secondNumberBtn")
 const secondNumberError = document.getElementById("secondNumberError")
+// fourth Page---------
+
+// final Page---------
+const curret = document.getElementById("curret")
+const curretText = document.getElementById("curretText")
+const wrong = document.getElementById("wrong")
+const wrongText = document.getElementById("wrongText")
+// final Page---------
 
 
 
-firstNameBtn.addEventListener("click", () => {
-    let inputValue = firstNameInput.value;
-    console.log(inputValue);
+// first page-------------
+firstNameBtn.addEventListener("click", ()=>{
+    let inputName = firstNameInput.value
+    console.log(inputName);
 
-    if (inputValue === "") {
+    if (inputName === "") {
         firstNameError.removeAttribute("hidden")
     }
-    else {
+    else{
         firstNameError.setAttribute("hidden", true)
-        secondPage.removeAttribute("hidden")
         firstPage.setAttribute("hidden", true)
-        secondPageHead.innerText = firstNameInput.value;
-    }
-
+        secondPage.removeAttribute("hidden")
+        secondPageHead.innerText = firstNameInput.value
+    }   
 })
+// first page-------------
 
+// second page-------------
+firstNumberBtn.addEventListener("click", ()=>{
+    let inputNumber = firstNumberInput.value
+    console.log(inputNumber);
 
-
-firstNumberBtn.addEventListener("click", () => {
-    let inputNumberValue = firstNumberInput.value;
-    console.log(inputNumberValue);
-
-    if (inputNumberValue === "") {
+    if (inputNumber === "") {
         firstNumberError.removeAttribute("hidden")
     }
-    else {
+    else{
         firstNumberError.setAttribute("hidden", true)
-        thirdPage.removeAttribute("hidden")
         secondPage.setAttribute("hidden", true)
-    }
-
+        thirdPage.removeAttribute("hidden")
+    }   
 })
+// second page-------------
 
+// third page-------------
+secondNameBtn.addEventListener("click", ()=>{
+    let inputName2 = secondNameInput.value
+    console.log(inputName2);
 
-
-secondNameBtn.addEventListener("click", () => {
-    let inputName2Value = secondNameInput.value;
-    console.log(inputName2Value);
-
-    if (inputName2Value === "") {
+    if (inputName2 === "") {
         secondNameError.removeAttribute("hidden")
     }
-    else {
+    else{
         secondNameError.setAttribute("hidden", true)
-        fourthPage.removeAttribute("hidden")
         thirdPage.setAttribute("hidden", true)
-        fourthPageHead.innerText = secondNameInput.value;
-    }
-
+        fourthPage.removeAttribute("hidden")
+        fourthPageHead.innerText = secondNameInput.value
+    }   
 })
+// third page-------------
 
+// fourth page-------------
+secondNumberBtn.addEventListener("click", ()=>{
+    let inputNumber2 = secondNumberInput.value
+    console.log(inputNumber2);
 
-
-secondNumberBtn.addEventListener("click", () => {
-    let inputNumber2Value = secondNumberInput.value;
-    console.log(inputNumber2Value);
-
-    if (inputNumber2Value === "") {
+    if (inputNumber2 === "") {
         secondNumberError.removeAttribute("hidden")
     }
-    else {
+    else{
         secondNumberError.setAttribute("hidden", true)
         fourthPage.setAttribute("hidden", true)
-
-        if (inputNumber2Value === firstNumberInput.value) {
-            curret.removeAttribute("hidden")
-        }else{
-            wrong.removeAttribute("hidden")
-        }
         
-    }
-
+        if (inputNumber2 === firstNumberInput.value) {
+            curret.removeAttribute("hidden")
+            curretText.innerText=`${secondNameInput.value} is win`         
+        }
+        else{
+            wrong.removeAttribute("hidden")
+            wrongText.innerText=`${firstNameInput.value} is win`
+        }
+    }   
 })
+// fourth page-------------

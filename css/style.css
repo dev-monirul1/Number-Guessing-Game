@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 80px 20px;
+}
+
+/* All pages */
+#firstPage,
+#secondPage,
+#thirdPage,
+#fourthPage,
+#curret,
+#wrong {
+    width: 400px;
+    padding: 35px;
+    margin-bottom: 60px; /* page gulor majhe gap */
+    
+    background: white;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 14px 15px;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+
+    margin-bottom: 18px;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Error */
+h2 {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: rgb(255, 247, 247);
+    font-size: 15px;
+    transition: 0.3s;
+    background-image: linear-gradient(to right, red , rgb(22, 70, 199));
+}
+h2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Correct */
+#curret {
+    border-top: 6px solid #2ecc71;
+}
+
+#curretText {
+    color: #2ecc71;
+    margin: 0;
+}
+
+/* Wrong */
+#wrong {
+    border-top: 6px solid #e74c3c;
+}
+
+#wrongText {
+    color: #e74c3c;
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    #firstPage,
+    #secondPage,
+    #thirdPage,
+    #fourthPage,
+    #curret,
+    #wrong {
+        width: 90%;
+        margin-bottom: 40px;
+        padding: 25px;
+    }
+}
