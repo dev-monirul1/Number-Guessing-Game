@@ -56,21 +56,21 @@ firstNumberBtn.addEventListener("click", () => {
 
 
 
-// secondNameBtn.addEventListener("click", () => {
-//     let inputName2Value = secondNameInput.value;
-//     console.log(inputName2Value);
+secondNameBtn.addEventListener("click", () => {
+    let inputName2Value = secondNameInput.value;
+    console.log(inputName2Value);
 
-//     if (inputName2Value === "") {
-//         secondNameError.removeAttribute("hidden")
-//     }
-//     else {
-//         secondNameError.setAttribute("hidden", true)
-//         fourthPage.removeAttribute("hidden")
-//         thirdPage.setAttribute("hidden", true)
-//         fourthPageHead.innerText = secondNameInput.value;
-//     }
+    if (inputName2Value === "") {
+        secondNameError.removeAttribute("hidden")
+    }
+    else {
+        secondNameError.setAttribute("hidden", true)
+        fourthPage.removeAttribute("hidden")
+        thirdPage.setAttribute("hidden", true)
+        fourthPageHead.innerText = secondNameInput.value;
+    }
 
-// })
+})
 
 
 
