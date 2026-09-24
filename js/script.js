@@ -21,21 +21,21 @@ const secondNumberError = document.getElementById("secondNumberError")
 
 
 
-// firstNameBtn.addEventListener("click", () => {
-//     let inputValue = firstNameInput.value;
-//     console.log(inputValue);
+firstNameBtn.addEventListener("click", () => {
+    let inputValue = firstNameInput.value;
+    console.log(inputValue);
 
-//     if (inputValue === "") {
-//         firstNameError.removeAttribute("hidden")
-//     }
-//     else {
-//         firstNameError.setAttribute("hidden", true)
-//         secondPage.removeAttribute("hidden")
-//         firstPage.setAttribute("hidden", true)
-//         secondPageHead.innerText = firstNameInput.value;
-//     }
+    if (inputValue === "") {
+        firstNameError.removeAttribute("hidden")
+    }
+    else {
+        firstNameError.setAttribute("hidden", true)
+        secondPage.removeAttribute("hidden")
+        firstPage.setAttribute("hidden", true)
+        secondPageHead.innerText = firstNameInput.value;
+    }
 
-// })
+})
 
 
 
