@@ -74,23 +74,23 @@ secondNameBtn.addEventListener("click", () => {
 
 
 
-// secondNumberBtn.addEventListener("click", () => {
-//     let inputNumber2Value = secondNumberInput.value;
-//     console.log(inputNumber2Value);
+secondNumberBtn.addEventListener("click", () => {
+    let inputNumber2Value = secondNumberInput.value;
+    console.log(inputNumber2Value);
 
-//     if (inputNumber2Value === "") {
-//         secondNumberError.removeAttribute("hidden")
-//     }
-//     else {
-//         secondNumberError.setAttribute("hidden", true)
-//         fourthPage.setAttribute("hidden", true)
+    if (inputNumber2Value === "") {
+        secondNumberError.removeAttribute("hidden")
+    }
+    else {
+        secondNumberError.setAttribute("hidden", true)
+        fourthPage.setAttribute("hidden", true)
 
-//         if (inputNumber2Value === firstNumberInput.value) {
-//             curret.removeAttribute("hidden")
-//         }else{
-//             wrong.removeAttribute("hidden")
-//         }
+        if (inputNumber2Value === firstNumberInput.value) {
+            curret.removeAttribute("hidden")
+        }else{
+            wrong.removeAttribute("hidden")
+        }
         
-//     }
+    }
 
-// })
+})
